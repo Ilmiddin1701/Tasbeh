@@ -23,7 +23,7 @@
             android:paddingHorizontal="15dp"
             android:text="1.“Subhanallohi valhamdulillahi va laa ilaha illallohu vallohu akbar. Laa havla va laa quvvata illa billahil 'Aliyyil 'Aziym”."
             android:textColor="@color/white"
-            android:textSize="25sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/tv1_counter"
@@ -46,7 +46,7 @@
             android:paddingHorizontal="15dp"
             android:text="2.“Allohumma solli 'ala sayyidina Muhammadin va 'ala aalihi va sohbihi va sallim”."
             android:textColor="@color/white"
-            android:textSize="25sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/tv2_counter"

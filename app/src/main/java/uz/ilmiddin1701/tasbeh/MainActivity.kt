@@ -67,27 +67,6 @@ class MainActivity : AppCompatActivity() {
                 dialog.show()
             }
             var positionPage = 0
-            myViewPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
-                override fun onPageScrolled(
-                    position: Int,
-                    positionOffset: Float,
-                    positionOffsetPixels: Int
-                ) {
-                    // Bu yerda sahifa qisman surilganda ishla ydi
-                }
-
-                override fun onPageSelected(position: Int) {
-                    // Bu yerda sahifa to'liq o'zgartirilgan paytda ishlaydi
-                    positionPage = position
-                    countDisplay.text = ""
-                    MyData.page1Data.postValue(4)
-                    MyData.page3Scroll.postValue(true)
-                }
-
-                override fun onPageScrollStateChanged(state: Int) {
-                    // Bu yerda sahifa surilish holati o'zgarganda ishlaydi
-                }
-            })
             var selectedTv = -1
             MyData.page1Data.observe(this@MainActivity) { tvSelected ->
                 when (tvSelected) {
@@ -123,6 +102,68 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             }
+            myViewPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
+                override fun onPageScrolled(
+                    position: Int,
+                    positionOffset: Float,
+                    positionOffsetPixels: Int
+                ) {
+                    // Bu yerda sahifa qisman surilganda ishla ydi
+                }
+
+                override fun onPageSelected(position: Int) {
+                    // Bu yerda sahifa to'liq o'zgartirilgan paytda ishlaydi
+                    positionPage = position
+                    MyData.page1Data.postValue(4)
+                    MyData.page3Scroll.postValue(true)
+                    when (position) {
+                        0 -> {
+                            var count1 = MySharedPreferences.tv1Counter
+                            var count2 = MySharedPreferences.tv2Counter
+                            var count3 = MySharedPreferences.tv3Counter
+                            when (selectedTv) {
+                                0 -> {
+                                    val strCount = String.format("%02d", count1)
+                                    countDisplay.text = strCount
+                                }
+                                1 -> {
+                                    val strCount = String.format("%02d", count2)
+                                    countDisplay.text = strCount
+                                }
+                                2 -> {
+                                    val strCount = String.format("%02d", count3)
+                                    countDisplay.text = strCount
+                                }
+                                else -> countDisplay.text = ""
+                            }
+                        }
+                        1 -> {
+                            var count1 = MySharedPreferences.page2Tv1Counter
+                            val strCount = String.format("%02d", count1)
+                            countDisplay.text = strCount
+                        }
+                        2 -> {
+                            when (selectedTv2) {
+                                0 -> {
+                                    var count1 = MySharedPreferences.page3Tv1Counter
+                                    val strCount = String.format("%02d", count1)
+                                    countDisplay.text = strCount
+                                }
+                                1 -> {
+                                    var count2 = MySharedPreferences.page3Tv2Counter
+                                    val strCount = String.format("%02d", count2)
+                                    countDisplay.text = strCount
+                                }
+                                else -> countDisplay.text = ""
+                            }
+                        }
+                    }
+                }
+
+                override fun onPageScrollStateChanged(state: Int) {
+                    // Bu yerda sahifa surilish holati o'zgarganda ishlaydi
+                }
+            })
             btnAdd.setOnClickListener {
                 when (positionPage) {
                     0 -> {
