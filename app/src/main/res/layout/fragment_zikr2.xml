@@ -14,7 +14,7 @@
         android:fontFamily="@font/my_font_2"
         android:gravity="center"
         android:paddingHorizontal="15dp"
-        android:text="“Ashhadu alla ilaha illallohu vahdahu laa sharika lah, lahul mulku va lahul hamdu yuhyi va yumiytu va huva hayyul laa yamutu, biyadihil hayru va huva 'ala kulli shay'in qodiyr”."
+        android:text="@string/ashhadu_alla_ilaha_illallohu_vahdahu_laa_sharika_lah_lahul_mulku_va_lahul_hamdu_yuhyi_va_yumiytu_va_huva_hayyul_laa_yamutu_biyadihil_hayru_va_huva_ala_kulli_shay_in_qodiyr"
         android:textColor="#FFB874"
         android:textSize="20sp" />
 
@@ -26,7 +26,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="5dp"
         android:fontFamily="@font/my_font_2"
-        android:text="0 marta"
+        android:text="@string/_0_marta"
         android:textColor="@color/white"
         android:textSize="18sp" />
 
@@ -37,7 +37,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="15dp"
         android:gravity="center"
-        android:text="Bu zikrni qancha ko'p aytsangiz\nsavobi shuncha ko'p bo'ladi"
+        android:text="@string/bu_zikrni_qancha_ko_p_aytsangiz_nsavobi_shuncha_ko_p_bo_ladi"
         android:textColor="#FFB874"
         android:textSize="16sp" />
 </RelativeLayout>

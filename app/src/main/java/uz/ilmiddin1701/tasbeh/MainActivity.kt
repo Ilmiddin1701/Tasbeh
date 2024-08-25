@@ -8,7 +8,6 @@ import android.os.Build
 import android.os.Bundle
 import android.os.VibrationEffect
 import android.os.Vibrator
-import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
@@ -118,9 +117,9 @@ class MainActivity : AppCompatActivity() {
                     MyData.page3Scroll.postValue(true)
                     when (position) {
                         0 -> {
-                            var count1 = MySharedPreferences.tv1Counter
-                            var count2 = MySharedPreferences.tv2Counter
-                            var count3 = MySharedPreferences.tv3Counter
+                            val count1 = MySharedPreferences.tv1Counter
+                            val count2 = MySharedPreferences.tv2Counter
+                            val count3 = MySharedPreferences.tv3Counter
                             when (selectedTv) {
                                 0 -> {
                                     val strCount = String.format("%02d", count1)
@@ -138,19 +137,19 @@ class MainActivity : AppCompatActivity() {
                             }
                         }
                         1 -> {
-                            var count1 = MySharedPreferences.page2Tv1Counter
+                            val count1 = MySharedPreferences.page2Tv1Counter
                             val strCount = String.format("%02d", count1)
                             countDisplay.text = strCount
                         }
                         2 -> {
                             when (selectedTv2) {
                                 0 -> {
-                                    var count1 = MySharedPreferences.page3Tv1Counter
+                                    val count1 = MySharedPreferences.page3Tv1Counter
                                     val strCount = String.format("%02d", count1)
                                     countDisplay.text = strCount
                                 }
                                 1 -> {
-                                    var count2 = MySharedPreferences.page3Tv2Counter
+                                    val count2 = MySharedPreferences.page3Tv2Counter
                                     val strCount = String.format("%02d", count2)
                                     countDisplay.text = strCount
                                 }

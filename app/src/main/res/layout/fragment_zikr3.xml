@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -21,7 +20,7 @@
             android:fontFamily="@font/my_font_2"
             android:gravity="center"
             android:paddingHorizontal="15dp"
-            android:text="1.“Subhanallohi valhamdulillahi va laa ilaha illallohu vallohu akbar. Laa havla va laa quvvata illa billahil 'Aliyyil 'Aziym”."
+            android:text="@string/_1_subhanallohi_valhamdulillahi_va_laa_ilaha_illallohu_vallohu_akbar_laa_havla_va_laa_quvvata_illa_billahil_aliyyil_aziym"
             android:textColor="@color/white"
             android:textSize="20sp" />
 
@@ -32,7 +31,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="5dp"
             android:fontFamily="@font/my_font_2"
-            android:text="0 marta"
+            android:text="@string/_0_marta"
             android:textColor="@color/white"
             android:textSize="18sp" />
 
@@ -44,7 +43,7 @@
             android:fontFamily="@font/my_font_2"
             android:gravity="center"
             android:paddingHorizontal="15dp"
-            android:text="2.“Allohumma solli 'ala sayyidina Muhammadin va 'ala aalihi va sohbihi va sallim”."
+            android:text="@string/_2_allohumma_solli_ala_sayyidina_muhammadin_va_ala_aalihi_va_sohbihi_va_sallim"
             android:textColor="@color/white"
             android:textSize="20sp" />
 
@@ -55,7 +54,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="5dp"
             android:fontFamily="@font/my_font_2"
-            android:text="0 marta"
+            android:text="@string/_0_marta"
             android:textColor="@color/white"
             android:textSize="18sp" />
     </LinearLayout>
@@ -68,7 +67,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginBottom="15dp"
         android:gravity="center"
-        android:text="Bu zikrlarni qancha ko'p aytsangiz\nsavobi shuncha ko'p bo'ladi"
+        android:text="@string/bu_zikrlarni_qancha_ko_p_aytsangiz_nsavobi_shuncha_ko_p_bo_ladi"
         android:textColor="#FFB874"
         android:textSize="16sp" />
 </RelativeLayout>
