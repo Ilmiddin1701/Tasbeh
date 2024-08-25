@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#133729"
+    tools:context=".Fragments.Zikr2Fragment">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/my_font_2"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="“Ashhadu alla ilaha illallohu vahdahu laa sharika lah, lahul mulku va lahul hamdu yuhyi va yumiytu va huva hayyul laa yamutu, biyadihil hayru va huva 'ala kulli shay'in qodiyr”."
+        android:textColor="#FFB874"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv1_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/my_font_2"
+        android:text="0 marta"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="Bu zikrni qancha ko'p aytsangiz\nsavobi shuncha ko'p bo'ladi"
+        android:textColor="#FFB874"
+        android:textSize="16sp" />
+</RelativeLayout>
