@@ -3,6 +3,7 @@ package uz.ilmiddin1701.tasbeh
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
+import android.graphics.Color
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
@@ -114,7 +115,7 @@ class MainActivity : AppCompatActivity() {
                     // Bu yerda sahifa to'liq o'zgartirilgan paytda ishlaydi
                     positionPage = position
                     MyData.page1Data.postValue(4)
-                    MyData.page3Scroll.postValue(true)
+                    materialCarView.strokeColor = Color.parseColor("#FFB874")
                     when (position) {
                         0 -> {
                             val count1 = MySharedPreferences.tv1Counter
@@ -253,6 +254,7 @@ class MainActivity : AppCompatActivity() {
                             0 -> {
                                 vibrate(this@MainActivity)
                                 btnAdd.animate().rotationBy(20f).setDuration(300).start()
+                                materialCarView.strokeColor = Color.parseColor("#FFB874")
                                 count1++
                                 if (count1 == 33) {
                                     vibrate2(this@MainActivity)
@@ -269,6 +271,7 @@ class MainActivity : AppCompatActivity() {
                             1 -> {
                                 vibrate(this@MainActivity)
                                 btnAdd.animate().rotationBy(20f).setDuration(300).start()
+                                materialCarView.strokeColor = Color.parseColor("#FFB874")
                                 count2++
                                 if (count2 == 33) {
                                     vibrate2(this@MainActivity)
@@ -282,6 +285,7 @@ class MainActivity : AppCompatActivity() {
                                 countDisplay.text = strCount
                                 MySharedPreferences.page3Tv2Counter = count2
                             }
+                            else -> materialCarView.strokeColor = Color.parseColor("#FF0000")
                         }
                     }
                 }

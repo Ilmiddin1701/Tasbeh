@@ -35,12 +35,6 @@ class Zikr3Fragment : Fragment() {
                     tv2Counter.text = "0 marta    barchasi: 0 ta"
                 }
             }
-            MyData.page3Scroll.observe(viewLifecycleOwner) {
-                if (it) {
-                    tv1.setTextColor(Color.parseColor("#FFFFFF"))
-                    tv2.setTextColor(Color.parseColor("#FFFFFF"))
-                }
-            }
             tv1.setOnClickListener {
                 tv1.setTextColor(Color.parseColor("#FFB874"))
                 tv2.setTextColor(Color.parseColor("#FFFFFF"))

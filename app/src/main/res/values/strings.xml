@@ -10,4 +10,13 @@
     <string name="_1_subhanallohi_valhamdulillahi_va_laa_ilaha_illallohu_vallohu_akbar_laa_havla_va_laa_quvvata_illa_billahil_aliyyil_aziym">1.“Subhanallohi valhamdulillahi va laa ilaha illallohu vallohu akbar. Laa havla va laa quvvata illa billahil \'Aliyyil \'Aziym”.</string>
     <string name="_2_allohumma_solli_ala_sayyidina_muhammadin_va_ala_aalihi_va_sohbihi_va_sallim">2.“Allohumma solli \'ala sayyidina Muhammadin va \'ala aalihi va sohbihi va sallim”.</string>
     <string name="bu_zikrlarni_qancha_ko_p_aytsangiz_nsavobi_shuncha_ko_p_bo_ladi">Bu zikrlarni qancha ko\'p aytsangiz\nsavobi shuncha ko\'p bo\'ladi</string>
+    <string name="subhan_alloh">Subhan Alloh</string>
+    <string name="alhamdulillah">Alhamdulillah</string>
+    <string name="allohu_akbar">Allohu Akbar</string>
+    <string name="zikrni_tanlang">Zikrni tanlang</string>
+    <string name="drop">drop</string>
+    <string name="har_biri_33_martadan">Har biri 33 martadan</string>
+    <string name="reset">reset</string>
+    <string name="time">time</string>
+    <string name="center">center</string>
 </resources>

@@ -9,6 +9,7 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCarView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_above="@+id/linear1"
@@ -43,18 +44,19 @@
         <RelativeLayout
             android:id="@+id/relative2"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:layout_margin="20dp">
 
             <ImageView
                 android:id="@+id/reset"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:padding="1dp"
-                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
                 android:layout_marginStart="3dp"
                 android:clickable="true"
+                android:contentDescription="@string/reset"
                 android:focusable="true"
+                android:padding="1dp"
                 android:rotation="45"
                 android:src="@drawable/img" />
 
@@ -65,10 +67,11 @@
                 android:layout_centerInParent="true"
                 android:gravity="end"
                 android:hint="@string/hint"
-                android:textStyle="bold"
                 android:textColor="@color/black"
                 android:textColorHint="@color/black"
-                android:textSize="45sp" />
+                android:textSize="45sp"
+                android:textStyle="bold"
+                tools:ignore="RelativeOverlap" />
 
             <ImageView
                 android:id="@+id/time"
@@ -76,8 +79,8 @@
                 android:layout_height="45dp"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:layout_alignParentBottom="true"
                 android:layout_marginEnd="3dp"
+                android:contentDescription="@string/time"
                 android:src="@drawable/img_1" />
         </RelativeLayout>
 
@@ -90,6 +93,7 @@
                 android:id="@+id/btnAdd"
                 android:layout_width="250dp"
                 android:layout_height="250dp"
+                android:contentDescription="@string/center"
                 android:src="@drawable/ic_tasbeeh_add_button" />
 
             <androidx.cardview.widget.CardView
@@ -102,6 +106,7 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
+                    android:contentDescription="@string/center"
                     android:padding="5dp"
                     android:src="@drawable/kaba" />
             </androidx.cardview.widget.CardView>

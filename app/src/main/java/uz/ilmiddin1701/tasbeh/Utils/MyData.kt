@@ -13,7 +13,6 @@ object MyData {
     val page3Tv11Counter = MutableLiveData<Int>()
     val page3Tv22Counter = MutableLiveData<Int>()
     val page3Data = MutableLiveData<Int>()
-    val page3Scroll = MutableLiveData<Boolean>()
 
     val clearData = MutableLiveData<Boolean>()
 }

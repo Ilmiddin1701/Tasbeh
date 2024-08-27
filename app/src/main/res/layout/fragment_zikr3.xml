@@ -6,68 +6,63 @@
     android:background="#133729"
     tools:context=".Fragments.Zikr3Fragment">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:orientation="vertical">
+        tools:ignore="UselessParent">
 
-        <TextView
-            android:id="@+id/tv1"
+        <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/my_font_2"
-            android:gravity="center"
-            android:paddingHorizontal="15dp"
-            android:text="@string/_1_subhanallohi_valhamdulillahi_va_laa_ilaha_illallohu_vallohu_akbar_laa_havla_va_laa_quvvata_illa_billahil_aliyyil_aziym"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/tv1_counter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            android:fontFamily="@font/my_font_2"
-            android:text="@string/_0_marta"
-            android:textColor="@color/white"
-            android:textSize="18sp" />
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font_2"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:text="@string/_1_subhanallohi_valhamdulillahi_va_laa_ilaha_illallohu_vallohu_akbar_laa_havla_va_laa_quvvata_illa_billahil_aliyyil_aziym"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/tv2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:fontFamily="@font/my_font_2"
-            android:gravity="center"
-            android:paddingHorizontal="15dp"
-            android:text="@string/_2_allohumma_solli_ala_sayyidina_muhammadin_va_ala_aalihi_va_sohbihi_va_sallim"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
+            <TextView
+                android:id="@+id/tv1_counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/my_font_2"
+                android:text="@string/_0_marta"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
 
-        <TextView
-            android:id="@+id/tv2_counter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            android:fontFamily="@font/my_font_2"
-            android:text="@string/_0_marta"
-            android:textColor="@color/white"
-            android:textSize="18sp" />
-    </LinearLayout>
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/my_font_2"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:text="@string/_2_allohumma_solli_ala_sayyidina_muhammadin_va_ala_aalihi_va_sohbihi_va_sallim"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
-        android:gravity="center"
-        android:text="@string/bu_zikrlarni_qancha_ko_p_aytsangiz_nsavobi_shuncha_ko_p_bo_ladi"
-        android:textColor="#FFB874"
-        android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv2_counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/my_font_2"
+                android:text="@string/_0_marta"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>

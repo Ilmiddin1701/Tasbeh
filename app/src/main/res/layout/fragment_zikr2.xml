@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#133729"
+    android:orientation="vertical"
     tools:context=".Fragments.Zikr2Fragment">
 
     <TextView
@@ -13,31 +14,31 @@
         android:layout_centerInParent="true"
         android:fontFamily="@font/my_font_2"
         android:gravity="center"
-        android:paddingHorizontal="15dp"
+        android:paddingHorizontal="10dp"
         android:text="@string/ashhadu_alla_ilaha_illallohu_vahdahu_laa_sharika_lah_lahul_mulku_va_lahul_hamdu_yuhyi_va_yumiytu_va_huva_hayyul_laa_yamutu_biyadihil_hayru_va_huva_ala_kulli_shay_in_qodiyr"
         android:textColor="#FFB874"
-        android:textSize="20sp" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/tv1_counter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tv1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/my_font_2"
         android:text="@string/_0_marta"
         android:textColor="@color/white"
-        android:textSize="18sp" />
+        android:textSize="15sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="15dp"
+        android:layout_marginBottom="10dp"
         android:gravity="center"
         android:text="@string/bu_zikrni_qancha_ko_p_aytsangiz_nsavobi_shuncha_ko_p_bo_ladi"
         android:textColor="#FFB874"
-        android:textSize="16sp" />
+        android:textSize="13sp" />
 </RelativeLayout>
