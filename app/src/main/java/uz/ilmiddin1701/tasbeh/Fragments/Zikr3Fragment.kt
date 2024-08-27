@@ -3,12 +3,10 @@ package uz.ilmiddin1701.tasbeh.Fragments
 import android.annotation.SuppressLint
 import android.graphics.Color
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.PopupMenu
-import uz.ilmiddin1701.tasbeh.R
+import androidx.fragment.app.Fragment
 import uz.ilmiddin1701.tasbeh.Utils.MyData
 import uz.ilmiddin1701.tasbeh.Utils.MySharedPreferences
 import uz.ilmiddin1701.tasbeh.databinding.FragmentZikr3Binding
